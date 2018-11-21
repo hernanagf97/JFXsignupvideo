@@ -1,8 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="539.0" fitWidth="825.0" layoutX="-7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane layoutX="439.0" layoutY="19.0" prefHeight="425.0" prefWidth="336.0" style="-fx-background-color: #7caeffaa; -fx-background-radius: 20px;">
+         <effect>
+            <DropShadow color="#404040" />
+         </effect>
+         <children>
+            <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="69.0" layoutY="127.0" maxWidth="202.0" minWidth="184.0" prefHeight="43.0" prefWidth="202.0" promptText="USERNAME" styleClass="Texto" stylesheets="@application.css" unFocusColor="#9226cc">
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXPasswordField focusColor="WHITE" labelFloat="true" layoutX="68.0" layoutY="197.0" maxWidth="202.0" minWidth="182.0" prefHeight="43.0" prefWidth="202.0" promptText="PASSWORD" styleClass="Texto" stylesheets="@application.css" unFocusColor="#9227cc">
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+            </JFXPasswordField>
+            <JFXButton layoutX="69.0" layoutY="274.0" prefHeight="43.0" prefWidth="202.0" style="-fx-background-color: #9226cc; -fx-background-radius: 50px;" text="SIGNIN" textFill="WHITE" />
+            <JFXButton layoutX="67.0" layoutY="334.0" prefHeight="43.0" prefWidth="202.0" ripplerFill="#7c7c7c" style="-fx-background-radius: 50px;" text="FOGOT PASSWORD" textFill="WHITE" underline="true" />
+            <Label layoutX="95.0" layoutY="62.0" text="YOUR LOGO" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
 </AnchorPane>
-
